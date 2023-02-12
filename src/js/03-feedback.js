@@ -33,6 +33,7 @@ function onSiteReload() {
 
 function onFormSubmit(e) {
 	e.preventDefault();
+	console.log(`{email: ${input.value} message: ${textarea.value}}`);
 	localStorage.removeItem(KEY);
 	form.reset(); 	
 }
